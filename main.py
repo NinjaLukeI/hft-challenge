@@ -16,7 +16,7 @@ chrome_options.set_capability("goog:loggingPrefs", {
 
 driver = webdriver.Chrome(options=chrome_options)
 
-driver.get("https://challenge.longshotsystems.co.uk/go")
+driver.get("www.challenge.com") # replacing site name to keep challenge secure. need to import name from a gitignore file later
 driver.execute_script("""
     var y = document.getElementsByClassName("answer-panel");
                       y[0].style.visibility = "visible";
